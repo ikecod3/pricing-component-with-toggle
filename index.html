@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Montserrat:wght@700&family=Roboto+Flex:opsz,wght@8..144,500&family=Roboto:wght@300;400;500;700;900&family=Work+Sans:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <title>Frontend Mentor | Pricing</title>
+  </head>
+  <body>
+    <!-- wrapper div -->
+    <div class="flex flex-col justify-center items-center">
+      <!-- header/toggeler section -->
+      <section class="text-center p-2">
+        <h1 class="heading-price p-5">Our Pricing</h1>
+        <!-- Toggler start here -->
+        <div class="form-check form-switch flex gap-4 justify-center p-6">
+          <label class="form-check-label">Annually</label>
+          <label class="relative inline-flex items-center me-5 cursor-pointer">
+            <input
+              type="checkbox"
+              id="flexSwitchCheck"
+              class="sr-only peer"
+              checked
+            />
+            <div
+              class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-gray-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600"
+            ></div>
+          </label>
+          <label class="form-check-label">Monthly</label>
+        </div>
+        <!-- toggler ends here -->
+      </section>
+      <!-- --------------------------------- -->
+
+      <!-- Card pricing section -->
+      <section
+        id="subscription"
+        class="flex flex-wrap justify-center aligns-items-center text-center p-8 gap-6"
+      ></section>
+      <!-- ---------------------------- -->
+    </div>
+    <!-- -------------------------------- -->
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
